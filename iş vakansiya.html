@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şirkət Vakansiyaları və Anketi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .vacancies {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .vacancies h2 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        .vacancy-list {
+            list-style: none;
+        }
+
+        .vacancy-list li {
+            padding: 10px;
+            margin-bottom: 10px;
+            background: #f7f7f7;
+            border-left: 5px solid #4CAF50;
+            border-radius: 4px;
+            transition: 0.3s ease;
+        }
+
+        .vacancy-list li:hover {
+            background: #e2e2e2;
+        }
+
+        .vacancy-list li strong {
+            font-weight: bold;
+        }
+
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form select, form textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Balxurma MMC Vakansiyaları və Müraciət Forması</h1>
+    </header>
+
+    <div class="container">
+        <!-- Vakansiyalar Bölməsi -->
+        <section class="vacancies">
+            <h2>Mövcud Vakansiyalar</h2>
+            <ul class="vacancy-list">
+                <li><strong>Vakansiya 1:</strong> Frontend İnkişaf etdirici</li>
+                <li><strong>Vakansiya 2:</strong> Backend İnkişaf etdirici</li>
+                <li><strong>Vakansiya 3:</strong> Sistem Administratoru</li>
+                <li><strong>Vakansiya 4:</strong> Marketinq Meneceri</li>
+            </ul>
+        </section>
+
+        <!-- Müraciət Forması -->
+        <section class="form-container">
+            <h2>İş Müraciət Forması</h2>
+            <form action="#" method="post">
+                <label for="name">Ad Soyad:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-poçt:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Telefon Nömrəsi:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="position">Müraciət Etdiyiniz Vakansiya:</label>
+                <select id="position" name="position" required>
+                    <option value="frontend">Frontend İnkişaf etdirici</option>
+                    <option value="backend">Backend İnkişaf etdirici</option>
+                    <option value="admin">Sistem Administratoru</option>
+                    <option value="marketing">Marketinq Meneceri</option>
+                </select>
+
+                <label for="experience">İş Təcrübəniz:</label>
+                <textarea id="experience" name="experience" rows="5" placeholder="İş təcrübənizi buraya yazın..." required></textarea>
+
+                <input type="submit" value="Müraciət Et">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Şirkət Adı - Bütün hüquqlar qorunur.</p>
+    </footer>
+
+</body>
+</html>
